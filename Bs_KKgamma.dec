@@ -1,0 +1,21 @@
+#
+# This is the decay file for the decay BS0 -> PHI{-> K+ K-} gamma
+#
+Alias      MyB_s0   B_s0
+Alias      Myanti-B_s0   anti-B_s0
+ChargeConj Myanti-B_s0   MyB_s0
+Alias      MyPhi         phi
+ChargeConj MyPhi         MyPhi
+ 
+#
+Decay MyB_s0
+1.000      MyPhi  gamma                  PHOTOS PHSP VSS;
+Enddecay
+CDecay Myanti-B_s0
+#
+Decay MyPhi
+1.000         mu+       mu-              PHOTOS VLL;
+Enddecay
+#
+End
+

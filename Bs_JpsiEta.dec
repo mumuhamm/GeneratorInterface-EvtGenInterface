@@ -1,0 +1,28 @@
+# Muhammad Alibordi
+# This is the decay file for the decay BS0 -> JPSI(1S){->(MU+ MU-)} ETA{-> gamma gamma} 
+#
+Alias      MyB_s0   B_s0
+Alias      Myanti-B_s0   anti-B_s0
+ChargeConj Myanti-B_s0   MyB_s0 
+Alias      MyJ/psi  J/psi
+Alias      MyEta    eta
+ChargeConj MyJ/psi  MyJ/psi
+ChargeConj MyEta    MyEta
+#
+Decay MyB_s0
+  1.000         MyJ/psi     MyEta        PHSP;
+Enddecay
+#
+Decay Myanti-B_s0
+  1.000         MyJ/psi     MyEta        PHSP;
+Enddecay
+#
+Decay MyJ/psi
+  1.000         mu+       mu-            PHOTOS VLL;
+Enddecay
+#
+Decay MyEta
+  1.000         gamma       gamma            PHOTOS PHSP;
+Enddecay
+#
+End
