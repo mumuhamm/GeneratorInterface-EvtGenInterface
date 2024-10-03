@@ -10,16 +10,16 @@ ChargeConj MyJ/psi  MyJ/psi
 ChargeConj MyEta    MyEta
 #
 Decay MyB_s0
-  1.000         MyJ/psi     MyEta        PHSP;
+  1.000         MyJ/psi     MyEta        PHOTOS PHSP;
 Enddecay
 CDecay Myanti-B_s0
 #
 Decay MyJ/psi
-  1.000         mu+       mu-            PHOTOS VLL;
+  1.000         mu+       mu-               VLL;
 Enddecay
 #
 Decay MyEta
-  1.000         gamma       gamma            PHOTOS;
+  1.000         gamma       gamma           PHSP;
 Enddecay
 #
 End
