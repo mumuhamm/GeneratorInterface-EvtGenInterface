@@ -9,7 +9,7 @@ ChargeConj MyPhi         MyPhi
  
 #
 Decay MyB_s0
-1.000      MyPhi  gamma                  PHOTOS PHSP VSS;
+1.000      MyPhi  gamma                  PHOTOS PHSP;
 Enddecay
 CDecay Myanti-B_s0
 #
